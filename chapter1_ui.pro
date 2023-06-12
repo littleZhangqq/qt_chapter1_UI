@@ -10,13 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    widget.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    widget.h
+    mainwindow.h
 
 FORMS += \
-    widget.ui
+    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -25,3 +25,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Resource.qrc
+# 设置应用程序图标
+RC_ICONS += :/images/launchicon.png
+QT+= network
